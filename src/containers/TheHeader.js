@@ -60,15 +60,15 @@ const TheHeader = () => {
         <CHeaderNavItem  className="px-3">
           <CHeaderNavLink to="/users">Users</CHeaderNavLink>
         </CHeaderNavItem>
-        <CHeaderNavItem className="px-3">
+        {/* <CHeaderNavItem className="px-3">
           <CHeaderNavLink to="/settings">Settings</CHeaderNavLink>
-        </CHeaderNavItem>
+        </CHeaderNavItem> */}
       </CHeaderNav>
 
       <CHeaderNav className="px-3">
-        <TheHeaderDropdownNotif/>
-        <TheHeaderDropdownTasks/>
-        <TheHeaderDropdownMssg/>
+        {/* <TheHeaderDropdownNotif/> */}
+        {/* <TheHeaderDropdownTasks/>
+        <TheHeaderDropdownMssg/> */}
         <TheHeaderDropdown/>
       </CHeaderNav>
 
@@ -78,9 +78,9 @@ const TheHeader = () => {
           routes={routes} 
         />
           <div className="d-md-down-none mfe-2 c-subheader-nav">
-            <CLink className="c-subheader-nav-link"href="#">
+            {/* <CLink className="c-subheader-nav-link"href="#">
               <CIcon name="cil-speech" alt="Settings" />
-            </CLink>
+            </CLink> */}
             <CLink 
               className="c-subheader-nav-link" 
               aria-current="page" 
@@ -89,13 +89,13 @@ const TheHeader = () => {
               <CIcon name="cil-graph" alt="Dashboard" />&nbsp;Dashboard
             </CLink>
 
-            <CLink 
+            {/* <CLink 
               className="c-subheader-nav-link" 
              
               to="/settings"
             >
                <CIcon name="cil-settings" alt="Settings" />&nbsp;Settings
-            </CLink>
+            </CLink> */}
 
 
            

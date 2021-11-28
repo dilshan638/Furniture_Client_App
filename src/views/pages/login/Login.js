@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom' 
 import {
   CButton,
   CCard,
@@ -46,7 +46,9 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs="6">
-                        <CButton color="primary" className="px-4">Login</CButton>
+                      <Link to="/dashboard">
+                        <CButton color="primary" className="px-4" >Login</CButton>
+                       </Link>
                       </CCol>
                       <CCol xs="6" className="text-right">
                         <CButton color="link" className="px-0">Forgot password?</CButton>
@@ -58,11 +60,11 @@ const Login = () => {
               <CCard className="text-white bg-primary py-5 d-md-down-none" style={{ width: '44%' }}>
                 <CCardBody className="text-center">
                   <div>
-                    <h2>Sign up</h2>
-                    <p>Welcome to Sandamali furniture world</p>
-                    <Link to="/register">
+                    <h2>Mapfreight</h2>
+                    <h4>Mapfreight helps you connect and share with the people in your life.</h4>
+                    {/* <Link to="/register">
                       <CButton color="primary" className="mt-3" active tabIndex={-1}>Register Now!</CButton>
-                    </Link>
+                    </Link> */}
                   </div>
                 </CCardBody>
               </CCard>

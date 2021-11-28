@@ -14,7 +14,7 @@ import {
   CRow
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
-
+import { Link } from 'react-router-dom'
 const Register = () => {
   return (
     <div className="c-app c-default-layout flex-row align-items-center">
@@ -25,7 +25,7 @@ const Register = () => {
               <CCardBody className="p-4">
                 <CForm>
                   <h1>Register</h1>
-                  <p className="text-muted">Create your account for  Sandamali furniture</p>
+                  <p className="text-muted">Create your account for Mapfreight</p>
                   <CInputGroup className="mb-3">
                     <CInputGroupPrepend>
                       <CInputGroupText>
@@ -56,18 +56,13 @@ const Register = () => {
                     </CInputGroupPrepend>
                     <CInput type="password" placeholder="Repeat password" autoComplete="new-password" />
                   </CInputGroup>
+                  <Link to="/login">
                   <CButton color="success" block>Create Account</CButton>
+                  </Link>
                 </CForm>
               </CCardBody>
               <CCardFooter className="p-4">
-                <CRow>
-                  <CCol xs="12" sm="6">
-                    <CButton className="btn-facebook mb-1" block><span>facebook</span></CButton>
-                  </CCol>
-                  <CCol xs="12" sm="6">
-                    <CButton className="btn-twitter mb-1" block><span>twitter</span></CButton>
-                  </CCol>
-                </CRow>
+               
               </CCardFooter>
             </CCard>
           </CCol>

@@ -1,12 +1,12 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 
-const _nav =  [
+const _nav = [
   {
     _tag: 'CSidebarNavItem',
     name: 'Dashboard',
     to: '/dashboard',
-    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon" />,
     badge: {
       color: 'info',
       text: 'NEW',
@@ -16,71 +16,60 @@ const _nav =  [
     _tag: 'CSidebarNavTitle',
     _children: ['Master']
   },
+  // {
+  //   _tag: 'CSidebarNavItem',
+  //   name: 'Cetegory',
+  //   to: '/master/cetegory',
+  //   icon: 'cil-pencil',
+  // },
+
+  //Components
   {
     _tag: 'CSidebarNavItem',
-    name: 'Cetegory',
-    to: '/master/cetegory',
+    name: 'Add Booking',
+    to: '/add-booking',
     icon: 'cil-pencil',
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Brand',
-    to: '/master/brand',
+    name: 'Add User',
+    to: '/add-user',
     icon: 'cil-pencil',
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Discount',
-    to: '/master/discount',
+    name: 'View Booking',
+    to: '/view-booking',
     icon: 'cil-pencil',
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Product',
-    to: '/master/product',
+    name: 'View Users',
+    to: '/view-users',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Create Email List',
+    to: '/create-email-list',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Profit Calculator',
+    to: '/profit-calculator',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Account Summary',
+    to: '/account-summary',
     icon: 'cil-pencil',
   },
 
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Operation']
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Operation',
-    to: '/operation/operation',
-    icon: 'cil-pencil',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Production',
-    to: '/operation/production',
-    icon: 'cil-pencil',
-  },
-
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Report']
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Report',
-    to: '/report/report-one',
-    icon: 'cil-pencil',
-  },
- 
-
-
- 
-
-  
-  
- 
-  
- 
-  {
+{
     _tag: 'CSidebarNavDropdown',
-    name: 'Pages',
+    name: 'Authentication',
     route: '/pages',
     icon: 'cil-star',
     _children: [
@@ -94,16 +83,16 @@ const _nav =  [
         name: 'Register',
         to: '/register',
       },
-      
+
     ],
   },
- 
+
   {
     _tag: 'CSidebarNavDivider',
     className: 'm-2'
   },
-  
- 
+
+
 ]
 
 export default _nav

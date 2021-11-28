@@ -37,35 +37,36 @@ const Typography = React.lazy(() => import('./views/theme/typography/Typography'
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
-const Cetegory = React.lazy(() => import('./views/Master/Cetegory'));
-const Brand = React.lazy(() => import('./views/Master/Brand'));
-const Discount = React.lazy(() => import('./views/Master/Discount'));
-const Product = React.lazy(() => import('./views/Master/Product'));
-const Operation = React.lazy(() => import('./views/Operation/Operation'));
-const Production = React.lazy(() => import('./views/Operation/Production'));
-const ReportOne = React.lazy(() => import('./views/Report/ReportOne'));
-const Settings = React.lazy(() => import('./views/Settings/Settings'));
+//const Cetegory = React.lazy(() => import('./views/Master/Cetegory'));
 
+const Settings = React.lazy(() => import('./views/Settings/Settings'));
+//Components
+const AddBooking = React.lazy(() => import('./components/AddBooking/AddBooking'));
+const AddUser = React.lazy(() => import('./components/AddUser'));
+const ViewBooking = React.lazy(() => import('./components/ViewBooking/ViewBooking'));
+const ViewUsers = React.lazy(() => import('./components/ViewUsers'));
+const CreateEmailList = React.lazy(() => import('./components/CreateEmailList'));
+const ProfitCalculator = React.lazy(() => import('./components/ProfitCalculator'));
+const AccountSummary = React.lazy(() => import('./components/AccountSummary'));
 
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
+  //{ path: '/master/cetegory', name: 'Cetegory', component: Cetegory },
 
-  { path: '/master/cetegory', name: 'Cetegory', component: Cetegory },
-  { path: '/master/brand', name: 'Brand', component: Brand },
-  { path: '/master/discount', name: 'Discount', component: Discount },
-  { path: '/master/product', name: 'Product', component: Product },
+  //Components
+  { path: '/add-booking', name: 'AddBooking', component: AddBooking },
+  { path: '/add-user', name: 'AddUser', component: AddUser },
+  { path: '/view-booking', name: 'ViewBooking', component: ViewBooking },
+  { path: '/view-users', name: 'ViewUsers', component: ViewUsers },
+  { path: '/create-email-list', name: 'CreateEmailList', component: CreateEmailList },
+  { path: '/profit-calculator', name: 'ProfitCalculator', component: ProfitCalculator },
+  { path: '/account-summary', name: 'AccountSummary', component: AccountSummary },
 
-  { path: '/operation/operation', name: 'Operation', component: Operation },
-  { path: '/operation/production', name: 'Production', component: Production },
 
-
-  { path: '/report/report-one', name: 'ReportOne', component: ReportOne },
   { path: '/settings', name: 'Settings', component: Settings },
-
-
   { path: '/theme/typography', name: 'Typography', component: Typography },
   { path: '/base', name: 'Base', component: Cards, exact: true },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
